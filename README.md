@@ -1,1 +1,1 @@
-# tnp-website-admin
+# TCET - Training and Placement Website
