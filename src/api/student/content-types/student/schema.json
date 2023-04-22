@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Student"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "profileImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "branch": {
+      "type": "string",
+      "required": true
+    },
+    "ERP": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "package": {
+      "type": "string",
+      "required": true
+    },
+    "superStarPerformer": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "startPerformer": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

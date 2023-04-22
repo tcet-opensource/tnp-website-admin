@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_interactions",
+  "info": {
+    "singularName": "industry-interaction",
+    "pluralName": "industry-interactions",
+    "displayName": "IndustryInteraction"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
