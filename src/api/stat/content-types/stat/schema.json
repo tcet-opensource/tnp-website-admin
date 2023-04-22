@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stats",
+  "info": {
+    "singularName": "stat",
+    "pluralName": "stats",
+    "displayName": "Stat"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NumberOfStudentsPlaced": {
+      "type": "integer",
+      "required": true
+    },
+    "NumberOfCompaniesVisited": {
+      "type": "integer",
+      "required": true
+    },
+    "StudentsWith10plusLPA": {
+      "type": "integer",
+      "required": true
+    },
+    "NumberOfCompaniesThatComeToTCET": {
+      "type": "integer",
+      "required": true
+    },
+    "NumberOfStudentsGotInternships": {
+      "type": "integer"
+    },
+    "NumberOfCompaniesVisitedForInternships": {
+      "type": "integer"
+    }
+  }
+}

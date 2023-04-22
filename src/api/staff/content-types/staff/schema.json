@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staffs",
+  "info": {
+    "singularName": "staff",
+    "pluralName": "staffs",
+    "displayName": "Staff"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "designation": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "department": {
+      "type": "enumeration",
+      "enum": [
+        "COMP",
+        "IT",
+        "AI/ML",
+        "AI/DS",
+        "ENTC",
+        "ELEX",
+        "MECH",
+        "CIVIL",
+        "IOT",
+        "MME",
+        "E&CS",
+        "CS&E"
+      ],
+      "required": true
+    }
+  }
+}

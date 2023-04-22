@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "all_star_performers_pdfs",
+  "info": {
+    "singularName": "all-star-performers-pdf",
+    "pluralName": "all-star-performers-pdfs",
+    "displayName": "AllStarPerformersPDF"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "integer",
+      "min": 2015,
+      "required": true
+    },
+    "file": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
