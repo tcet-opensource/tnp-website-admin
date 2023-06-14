@@ -9,12 +9,13 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.9.0",
-    "@strapi/plugin-users-permissions": "4.9.0",
     "@strapi/plugin-i18n": "4.9.0",
-    "pg": "8.8.0"
+    "@strapi/plugin-users-permissions": "4.9.0",
+    "@strapi/strapi": "4.9.0",
+    "pg": "8.8.0",
+    "react-router": "^6.12.1",
+    "react-router-dom": "^6.12.1"
   },
   "author": {
     "name": "A Strapi developer"
