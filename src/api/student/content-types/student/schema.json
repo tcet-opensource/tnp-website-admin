@@ -4,7 +4,8 @@
   "info": {
     "singularName": "student",
     "pluralName": "students",
-    "displayName": "Student"
+    "displayName": "Student",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,32 +16,19 @@
       "type": "string",
       "required": true
     },
-    "year": {
-      "type": "string",
-      "required": true
-    },
     "profileImg": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "branch": {
       "type": "string",
       "required": true
     },
-    "ERP": {
-      "type": "string",
-      "required": true
-    },
-    "company": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::company.company"
-    },
-    "package": {
+    "TnPUID": {
       "type": "string",
       "required": true
     },
@@ -52,6 +40,15 @@
     "startPerformer": {
       "type": "boolean",
       "default": false,
+      "required": true
+    },
+    "offers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::offer.offer"
+    },
+    "year": {
+      "type": "integer",
       "required": true
     }
   }
