@@ -50,6 +50,11 @@
     "year": {
       "type": "integer",
       "required": true
+    },
+    "topStudent": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
