@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offers",
+  "info": {
+    "singularName": "offer",
+    "pluralName": "offers",
+    "displayName": "Offer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "integer",
+      "required": true
+    },
+    "package": {
+      "type": "integer",
+      "required": true
+    },
+    "company": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "offerType": {
+      "type": "enumeration",
+      "enum": [
+        "Regular",
+        "Dream",
+        "SuperDream"
+      ],
+      "required": true,
+      "default": "Regular"
+    },
+    "isInternship": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
