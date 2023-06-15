@@ -17,7 +17,7 @@
       "required": true
     },
     "packageInLakhs": {
-      "type": "integer",
+      "type": "decimal",
       "required": true
     },
     "company": {
